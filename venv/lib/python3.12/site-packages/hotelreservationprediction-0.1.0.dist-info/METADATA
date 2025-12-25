@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: HotelReservationPrediction
+Version: 0.1.0
+Summary: A machine learning project for predicting hotel reservations.
+Author: Tejesh Boppana
+Author-email: tejesh.boppana@outlook.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: flask
+Requires-Dist: joblib
+Requires-Dist: gunicorn
+Requires-Dist: pandas-profiling
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
