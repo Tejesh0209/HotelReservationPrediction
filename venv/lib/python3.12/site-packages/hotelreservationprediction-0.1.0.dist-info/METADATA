@@ -11,6 +11,8 @@ Requires-Dist: flask
 Requires-Dist: joblib
 Requires-Dist: gunicorn
 Requires-Dist: pandas-profiling
+Requires-Dist: google-cloud-storage
+Requires-Dist: pyyaml
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist

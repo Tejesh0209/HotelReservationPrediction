@@ -1,3 +1,4 @@
+README.md
 setup.py
 HotelReservationPrediction.egg-info/PKG-INFO
 HotelReservationPrediction.egg-info/SOURCES.txt
@@ -5,5 +6,10 @@ HotelReservationPrediction.egg-info/dependency_links.txt
 HotelReservationPrediction.egg-info/requires.txt
 HotelReservationPrediction.egg-info/top_level.txt
 config/__init__.py
+config/paths_config.py
 src/__init__.py
+src/custom_exception.py
+src/data_ingestion.py
+src/logger.py
 utils/__init__.py
+utils/common_functions.py

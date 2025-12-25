@@ -14,7 +14,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
-def get_logger():
-    logger = logging.getLogger(os.name)
+def get_logger(name=None):
+    logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
     return logger

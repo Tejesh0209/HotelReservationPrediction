@@ -5,3 +5,5 @@ flask
 joblib
 gunicorn
 pandas-profiling
+google-cloud-storage
+pyyaml
