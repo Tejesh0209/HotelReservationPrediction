@@ -1,4 +1,4 @@
-pandas 
+pandas
 numpy
 scikit-learn
 flask
@@ -7,3 +7,9 @@ gunicorn
 pandas-profiling
 google-cloud-storage
 pyyaml
+imbalanced-learn
+xgboost
+lightgbm
+statsmodels
+matplotlib
+seaborn
