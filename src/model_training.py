@@ -7,7 +7,7 @@ from src.logger import get_logger
 from src.custom_exception import CustomException
 from config.paths_config import *
 from utils.common_functions import read_yaml_file, load_data
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, precision_score
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, precision_score, recall_score, f1_score
             
 from sklearn.model_selection import RandomizedSearchCV
 from config.model_params import MODEL_PARAMS, TRAINING_PARAMS
@@ -91,9 +91,9 @@ class ModelTraining:
             y_pred = model.predict(X_test)
 
             accuracy = accuracy_score(y_test,y_pred)
-            precision = precision_score(y_test,y_pred)
-            recall = recall_score(y_test,y_pred)
-            f1 = f1_score(y_test,y_pred)
+            precision = precision_score(y_test,y_pred, average='weighted', zero_division=0)
+            recall = recall_score(y_test,y_pred, average='weighted', zero_division=0)
+            f1 = f1_score(y_test,y_pred, average='weighted', zero_division=0)
 
             logger.info(f"Accuracy Score : {accuracy}")
             logger.info(f"Precision Score : {precision}")

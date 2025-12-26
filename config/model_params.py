@@ -27,8 +27,7 @@ RANDOM_SEARCH_PARAMS = {
 
 # Model parameters for training
 MODEL_PARAMS = {
-    'lightgbm': LIGHTGBM_PARAM_DISTRIBUTION,
-    'random_forest': RANDOM_FOREST_PARAM_DISTRIBUTION
+    'lightgbm': LIGHTGBM_PARAM_DISTRIBUTION
 }
 
 # Training parameters
