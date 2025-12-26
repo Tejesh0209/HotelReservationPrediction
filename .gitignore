@@ -3,3 +3,5 @@ artifacts/
 logs/
 google-cloud-sdk/
 __pycache__/
+logs/
+mlruns/
