@@ -7,3 +7,11 @@ gunicorn
 pandas-profiling
 google-cloud-storage
 pyyaml
+imbalanced-learn
+xgboost
+lightgbm
+statsmodels
+matplotlib
+seaborn
+lightgbm
+mlflow
