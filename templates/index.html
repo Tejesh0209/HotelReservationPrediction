@@ -134,10 +134,15 @@
 
     {% if prediction is not none %}
     <div class="result">
-        {% if prediction == 0 %}
-        <p>The Customer is going to cancel his reservation</p>
-        {% elif prediction == 1 %}
-        <p>The Customer is not going to cancel his reservation</p>
+        <h3>Prediction Result:</h3>
+        {% if prediction == 'Canceled' %}
+        <p class="prediction canceled">{{ prediction }}</p>
+        <p>The customer is likely to cancel their reservation.</p>
+        {% elif prediction == 'Not_Canceled' %}
+        <p class="prediction not-canceled">{{ prediction }}</p>
+        <p>The customer is likely to proceed with their reservation.</p>
+        {% else %}
+        <p class="prediction">{{ prediction }}</p>
         {% endif %}
     </div>
     {% endif %}
