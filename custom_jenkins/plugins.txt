@@ -1,0 +1,15 @@
+cloudbees-folder:6.760.v0b_b_94525151
+antisamy-markup-formatter:2.13
+build-timeout:1.24
+credentials:1282.v7009381102ce
+timestamper:1.25
+workflow-support:862.vb_7335a_97b_e7e
+workflow-job:1356.v475db_33203d0
+workflow-multibranch:716.vc4a_e2b_5dd33f
+pipeline-model-definition:2.2109.v64662e4008a_9
+pipeline-stage-view:2.33
+junit:1.57
+docker-plugin:1.5.3
+docker-build-step:1.6.3
+github:1.37.3.1
+git:5.2.0

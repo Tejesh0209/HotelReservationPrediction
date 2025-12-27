@@ -4,7 +4,6 @@ scikit-learn
 flask
 joblib
 gunicorn
-pandas-profiling
 google-cloud-storage
 pyyaml
 imbalanced-learn
@@ -13,5 +12,4 @@ lightgbm
 statsmodels
 matplotlib
 seaborn
-lightgbm
 mlflow
