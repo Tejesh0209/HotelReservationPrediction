@@ -17,10 +17,12 @@ pipeline {
         
         stage('Setup Environment') {
             steps {
-                echo "Setting up Python environment..."
+                echo "Setting up Python virtual environment..."
                 sh '''
                     python3 --version
-                    pip3 --version
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install --upgrade pip
                 '''
             }
         }
@@ -29,7 +31,8 @@ pipeline {
             steps {
                 echo "Installing Python dependencies..."
                 sh '''
-                    pip3 install --no-cache-dir -r requirements.txt
+                    . venv/bin/activate
+                    pip install --no-cache-dir -r requirements.txt
                 '''
             }
         }
